@@ -3,8 +3,11 @@
 The in-app updater on every TV reads **one place only**: the releases of
 [github.com/Tr33oflife/tavv-releases](https://github.com/Tr33oflife/tavv-releases).
 If a build is not published there, no TV will ever offer it. This guide is the
-manual route (GitHub web page). APK Builder's Publish button does the same
-thing automatically, with a read-back check.
+manual route (GitHub web page). APK Builder can also publish for you — after a
+successful build, its result screen offers a "Publish to GitHub" button (the
+profile needs a publish target repo set for it to appear; past builds in the
+history list carry the same button) — but the manual steps below work
+regardless of which builder version is in front of you.
 
 ## The three rules the updater enforces
 
