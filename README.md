@@ -43,11 +43,7 @@ Channels behave like real cable, too:
 
 ### 🎵 Music
 
-A full music panel, in the app by default: search (with suggestions as you type, voice search on remotes that offer it, and your recent searches kept), artist and album browsing, playlists, a queue, and playback that resumes where you left it — across restarts, mid-track. Lyrics load in the panel while a song plays.
-
-### 🌐 External Players
-
-A doorway panel for web streaming front-ends: open a site inside TavV and drive it with the TV remote — a cursor the arrows move, clicks that land where the cursor sits, and a guard that strips the overlay ads and popups those sites live on while leaving the video itself alone. The top bar stays yours: it only takes the remote when you've deliberately gone to the very top of the page.
+A full music panel, in the app by default: search (with suggestions as you type, voice search on remotes that offer it, and your recent searches kept), artist and album browsing, playlists, a queue, and playback that resumes where you left it — across restarts, mid-track. Lyrics load in the panel while a song plays — synced line by line when a timed source has them, following the track as it plays, with tap-to-seek.
 
 ### 📡 Settings that travel
 
@@ -129,6 +125,17 @@ Install the APK with TV Toolbox or any APK installer. All releases are signed wi
 ## Changelog
 
 Full notes live on each [release](https://github.com/Tr33oflife/tavv-releases/releases); the headlines:
+
+### Build 1299 — External Players removed
+
+- **External Players is gone, whole** — the panel, its built-in site list, and its cheat phrase are deleted, not hidden. If it was installed, the entry removes itself on update. (The generic web doorway stays: the Games panel and components you install yourself still use it.)
+- **Custom channels dealt through the guide (1298):** the built-in list channels and your own wizard channels no longer sit in a block at the very end — they're dealt evenly through the lineup, so zapping reaches them. Channel numbers stay stable day to day.
+- Carries 1297 whole.
+
+### Build 1297 — Synced lyrics · [notes](https://github.com/Tr33oflife/tavv-releases/releases/tag/v2.26.0-1297)
+
+- **Synced lyrics:** the Music panel pulls timed lyrics from LRCLIB — the current line highlights and follows the track, and tapping a line seeks to it. Plain lyrics remain the fallback.
+- Web doorway navigation rebuilt around a remote-moved cursor.
 
 ### Build 1296 — The channel-work build · [notes](https://github.com/Tr33oflife/tavv-releases/releases/tag/v2.26.0-1296)
 
