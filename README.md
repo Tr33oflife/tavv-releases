@@ -8,8 +8,8 @@ TavV is a fork of the [Plezy](https://github.com/edde746/plezy) Plex client — 
 
 📥 **[Download the latest release](https://github.com/Tr33oflife/tavv-releases/releases/latest)** · [All releases](https://github.com/Tr33oflife/tavv-releases/releases) · [Changelog](#changelog)
 
-![TavV Desktop home screen, sidebar open over a Continue Watching backdrop — Nostalgia Mode, Watch Party, Fireplace, Lofi & Chill, Radio and Karaoke all live in the rail](docs/images/home.jpg)
-*The home screen. Everything TavV adds lives in the sidebar: Nostalgia Mode, Watch Party, Fireplace, Lofi & Chill, Radio, Karaoke — alongside the full Plex library.*
+![TavV Desktop home screen, sidebar open over a Continue Watching backdrop — Nostalgia Mode, House Party, Fireplace, Lofi & Chill, Radio and Karaoke all live in the rail](docs/images/home.jpg)
+*The home screen. Everything TavV adds lives in the sidebar: Nostalgia Mode, House Party, Fireplace, Lofi & Chill, Radio, Karaoke — alongside the full Plex library.*
 
 ---
 
@@ -32,10 +32,30 @@ Channels behave like real cable, too:
 - **Episode cooldown** — the same episode can't repeat on the same channel for at least 48 hours (a week where the pool allows), just like regular TV.
 - **The fit check** — a quiet background pass that checks whether a title actually belongs on its channel, using outside facts (OMDb) and an optional AI tone pass, and drops the misfits.
 - **Sign-off hours** — thin channels sign off overnight (2–6 AM) instead of threadbare repeats; empty channels hide from the guide, leaving gaps in the numbering like real cable.
-- **Listing sync** — every TV in the house shares one lineup. The first set of the day starts the household; the others hear it and join on their own.
+- **Listing sync** — every TV in the house shares one lineup, on by default. The first set of the day starts the household; the others hear it and join on their own.
+- **Play styles** — a channel can broadcast **sequentially** (episodes in order, like a real run) and can refuse **back-to-back episodes of the same show**.
+- **Fair rotation** — draws between shows are weighted so a one-season show isn't drowned by the long runs next to it, without looping it either.
+- **Wizard dry run** — the channel wizard previews exactly which titles a recipe admits — and flags the ones no genre check vouches for — before the channel exists.
+- **More built-in channels (1296)** — Monster Island (kaiju), DC Animated, Licensed to Thrill (spy & action franchises), Ghibli, Final Frontier (Star Trek), Roam (travel & food), Quick Stop (View Askew), and a combined **Christmas** channel that leads with Christmas episodes — a verified master list of 237 across 89 series — and folds Christmas movies in behind them.
 
 ![The Nostalgia Mode guide — numbered custom channels with Now/Next programme rows](docs/images/guide.jpg)
 *The guide: your channels, numbered and always in the same place, each with what's on now and what's next.*
+
+### 🎵 Music
+
+A full music panel, in the app by default: search (with suggestions as you type, voice search on remotes that offer it, and your recent searches kept), artist and album browsing, playlists, a queue, and playback that resumes where you left it — across restarts, mid-track. Lyrics load in the panel while a song plays.
+
+### 🌐 External Players
+
+A doorway panel for web streaming front-ends: open a site inside TavV and drive it with the TV remote — a cursor the arrows move, clicks that land where the cursor sits, and a guard that strips the overlay ads and popups those sites live on while leaving the video itself alone. The top bar stays yours: it only takes the remote when you've deliberately gone to the very top of the page.
+
+### 📡 Settings that travel
+
+Set one TV up the way you like it, then share it: **Settings → Services** can send your setup to the other TVs in the household over the household link — no re-typing on a remote. Importing is a deliberate tap on the receiving set, and sign-ins and cheat codes never travel.
+
+### 🔎 Smart search
+
+Library search ranks what you meant: a show whose title matches beats a fuzzy actor match, so the series you typed is the first thing you see.
 
 ### 🎧 Lofi & Chill
 
@@ -64,7 +84,7 @@ A standalone radio panel wearing a 1930s cathedral-radio skin — walnut cabinet
 
 ### 🎤 Karaoke
 
-Pick a track from your Plex/Jellyfin music library and sing along — line-synced lyrics from LRCLIB light up line by line as the track plays, right in the panel. Unsynced or missing lyrics are labelled honestly. The original vocal stays in; it's a sing-along, not a vocal remover.
+Pick a track from your Plex music library and sing along — line-synced lyrics from LRCLIB light up line by line as the track plays, right in the panel. Unsynced or missing lyrics are labelled honestly. The original vocal stays in; it's a sing-along, not a vocal remover.
 
 ### 🥂 House Party & Guest Pass
 
@@ -74,7 +94,6 @@ Watch-together for the household: start a House Party from the player or the gui
 
 Settings → Services → Cheat codes accepts plain phrases that wake hidden panels:
 
-- `secret stash` — the **Stash** library panel
 - `ask the bartender` — the **Requests** panel
 - `librarian` — the **Books** tab
 - `game night` — the **Games** entry
@@ -111,9 +130,20 @@ Install the APK with TV Toolbox or any APK installer. All releases are signed wi
 
 Full notes live on each [release](https://github.com/Tr33oflife/tavv-releases/releases); the headlines:
 
+### Build 1296 — The channel-work build · [notes](https://github.com/Tr33oflife/tavv-releases/releases/tag/v2.26.0-1296)
+
+- **Fair rotation:** channel draws are weighted by the square root of a show's episode count — a 13-episode show next to two long runs goes from ~3% of the channel to ~11%, with repeats days apart.
+- **Seven new built-in channels** — Monster Island, DC Animated, Licensed to Thrill, Ghibli, Final Frontier, Roam, Quick Stop — plus **Slasher Alley: After Dark** for the 2000+ slashers, Kung Fu Theater's year cap lifted, and Saturday Morning admitting TV-PG.
+- **The Christmas channel:** Christmas episodes first (237 verified episodes across 89 series, matched by name), Christmas movies folded in as the minority share.
+- Carries 1288–1295 whole: the **Music panel is on by default** with working lyrics; **wireless settings share** between household TVs; doorway navigation hardened (seek only from the seek bar, the top bar only from the page's very top); the **channel wizard dry run**; music search suggestions, voice search, resume and Load more.
+
+### Build 1287 — House Party entry fix · [notes](https://github.com/Tr33oflife/tavv-releases/releases/tag/v2.26.0-1287)
+
+- The floating House Party chip over library playback is gone; the entry now lives at the end of the player's control bar, where the remote can reach it. The running-party banner stays.
+
 ### Build 1262 — Karaoke + mouse fix · [notes](https://github.com/Tr33oflife/tavv-releases/releases/tag/v2.26.0-1262)
 
-- **Karaoke (1261):** a new panel in the music family — pick a track from your Plex/Jellyfin music library and sing along to LRCLIB line-synced lyrics in-panel. Unsynced or missing lyrics are labelled honestly.
+- **Karaoke (1261):** a new panel in the music family — pick a track from your Plex music library and sing along to LRCLIB line-synced lyrics in-panel. Unsynced or missing lyrics are labelled honestly.
 - **Mouse fix (1262):** clicks now work on every TavV panel (Fireplace, Lofi, Radio, Karaoke, guide cards) — a tap focuses and selects, press-and-hold does the long-press. Keyboard/D-pad behaviour unchanged.
 - Windows bundle included.
 
@@ -145,7 +175,7 @@ Full notes live on each [release](https://github.com/Tr33oflife/tavv-releases/re
 - **1249** — Lofi & Chill performance pass: bundled scenes re-encoded lighter (720p24) for 32-bit hardware.
 - **1248** — Lofi & Chill black-background fix: the panel's music and rain move to a dedicated audio player so the scene player always paints.
 - **1247** — Upstream Plezy 2.26.0 sync (Dolby Vision, subtitle and seek fixes); **everything free** — the Supporter pack removed; Smart Shuffle button in the library header; remote channel up/down keys zap channels in the player.
-- **1246** — The cable pack: **sign-off hours**, **dead channels hidden**, **cheat phrases** (`secret stash`, `ask the bartender`, `librarian`); Explore/Jump tabs off by default on fresh installs. Carries 1245: crash reporting stripped out entirely, and the episode-cooldown ledger syncs through the household relay.
+- **1246** — The cable pack: **sign-off hours**, **dead channels hidden**, **cheat phrases** (`ask the bartender`, `librarian`); Explore/Jump tabs off by default on fresh installs. Carries 1245: crash reporting stripped out entirely, and the episode-cooldown ledger syncs through the household relay.
 - **1244** — **The episode cooldown:** no episode repeats on the same channel within 48 hours minimum, 7-day target, clocked on scheduled airtime.
 - **1243** — Lofi background picker: 17 animated backgrounds (3 bundled, 14 downloadable); commentary tracks can no longer be auto-selected or carried onto the next episode.
 - **1242** — Lofi scenes fix: the room artwork no longer covers the playing scene.
