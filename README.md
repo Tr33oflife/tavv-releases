@@ -93,8 +93,13 @@ Settings → Services → Cheat codes accepts plain phrases that wake hidden pan
 - `ask the bartender` — the **Requests** panel
 - `librarian` — the **Books** tab
 - `game night` — the **Games** entry
+- `external players` — the **External Players** browser
 
 (The original letter codes still work too.)
+
+### 🌐 External Players
+
+A real TV browser, built in (build 1300): a small built-in roster of streaming sites, browsed with a native cursor the remote drives — the D-pad moves the cursor, OK taps, holding OK scrolls the page, and nothing is ever injected into a page. When a stream starts, one press of Play sends it to TavV's own player. Woken by the `external players` cheat phrase; Android only.
 
 ### 🖥️ TavV Desktop
 
@@ -125,6 +130,13 @@ Install the APK with TV Toolbox or any APK installer. All releases are signed wi
 ## Changelog
 
 Full notes live on each [release](https://github.com/Tr33oflife/tavv-releases/releases); the headlines:
+
+### Build 1300 — External Players, rebuilt as a native browser
+
+- **External Players returns as a new panel** — browsing is a native cursor layer over the page: the remote moves a cursor, taps land as real touches, holding OK scrolls, and no script is ever injected into a page. The old doorway build stays deleted; if you had the panel before, the `external players` cheat phrase installs the new one fresh.
+- **Play in TavV player:** when a stream starts on a site, a "Play in TavV player" prompt appears (or just press Play) and the video opens in TavV's own player.
+- **Channel guide:** the House Party / Household / Recent header now starts folded behind a single row and scrolls away with the channels, instead of filling the guide.
+- Carries 1299 and 1298 whole.
 
 ### Build 1299 — External Players removed
 
