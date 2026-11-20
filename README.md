@@ -19,6 +19,43 @@ TavV is a fork of the [Plezy](https://github.com/edde746/plezy) Plex client — 
 - The TV builds install like any sideloaded APK; the Windows build is a plain ZIP — unzip and run `tavv.exe`.
 - TavV **updates itself**: the in-app updater checks this repo, so once you're installed, new builds arrive in the app.
 
+## Installing on a TV with Downloader
+
+TavV isn't in the Play Store, but the free **Downloader** app installs it in about five minutes using a short code. You only do this once — afterwards, TavV updates itself.
+
+**You need:** your TV or streaming box connected to the internet.
+
+**1. Get the Downloader app.** On your TV, open the Play Store (on Fire TV, the Amazon Appstore), search for **Downloader** by AFTVnews — the orange icon — and install it. It's free.
+
+**2. Open Downloader.** If it asks permission to access files, choose **Allow**. You'll see a box labelled "Enter a URL, Search Term, or Short Code":
+
+![The Downloader app's home screen, with the code box outlined](docs/images/downloader-home.jpg)
+
+**3. Type your code.** Select the box, type the code for your device, then choose **Go**.
+
+- **`7751929`** — 64-bit TVs: Shield Pro, Fire TV Cube, newer Sony & TCL sets
+- **`2890643`** — most streaming sticks and boxes: Chromecast with Google TV, Fire TV Sticks, onn boxes, Shield (tube)
+
+Not sure which you have? Use **`2890643`** — it installs on almost everything. If it's the wrong one for your device, nothing breaks; just repeat with the other code.
+
+![Downloader's "Enter a numeric short code" box](docs/images/downloader-code.jpg)
+
+**4. Install.** The file is about 160 MB, so the download takes a minute or two. When "File downloaded successfully" appears, choose **Install**:
+
+![Downloader's download-finished message, with the Install button highlighted](docs/images/downloader-install.jpg)
+
+The first time, your TV may say Downloader isn't allowed to install apps. Choose **Settings** on that message, turn on **Allow from this source**, press Back, and choose **Install** again.
+
+**5. Open TavV and sign in** with your Plex account. That's it.
+
+**If something goes wrong**
+
+- **"Code not found"** — check the digits and try again; they're easy to mistype with a remote.
+- **"App not installed"** — the other build fits your device better. Delete the file in Downloader's **Files** tab and repeat with the other code.
+- **The download stopped partway** — delete the partial file in Downloader's **Files** tab, then enter the code again.
+
+The codes never change — they always fetch the newest TavV. *Downloader is by [AFTVnews.com](https://www.aftvnews.com/); the screenshots above show that app.*
+
 ## What TavV adds
 
 On top of everything Plezy already does well:
@@ -121,7 +158,7 @@ Grab the newest build from the **[Releases page](https://github.com/Tr33oflife/t
 | `TavV-<version>-<build>-arm64-v8a.apk` | 64-bit TVs: Shield Pro (2015–2019), Fire TV Cube gen 2, newer Sony/TCL |
 | `TavV-<version>-<build>-windows-x64.zip` | Windows desktop (build 1260 and later) — unzip, run `tavv.exe` |
 
-Install the APK with TV Toolbox or any APK installer. All releases are signed with one consistent key, so a newer file installs over an older TavV without removing it first — and once installed, the in-app updater keeps you current from this repo.
+New to this? Follow the [Downloader guide](#installing-on-a-tv-with-downloader) above — or install the APK with TV Toolbox or any APK installer. All releases are signed with one consistent key, so a newer file installs over an older TavV without removing it first — and once installed, the in-app updater keeps you current from this repo.
 
 > One extra release, **fireplace-loops-v1**, isn't an app update: it carries the downloadable Fireplace scenes for build 1250+. The app fetches them itself on first pick; you don't need to download them by hand.
 
